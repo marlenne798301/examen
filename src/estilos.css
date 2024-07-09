@@ -1,0 +1,143 @@
+/* Menu.css */
+.navbar {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-cerrar {
+  background-color: #3490dc; /* Azul */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-cerrar:hover {
+  background-color: #2779bd; /* Azul oscuro */
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+.Menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+}
+
+.menu-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-links li {
+  margin-right: 20px;
+}
+
+.menu-links li:last-child {
+  margin-right: 0;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: #05005a;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .Menu-toggle {
+    display: block;
+  }
+
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .menu-links.active {
+    display: flex;
+  }
+
+  .menu-links li {
+    margin: 10px 0;
+  }
+}
+
+/*Estilos de la seccion de conceptos*/
+.conceptos-container {
+  text-align: center;
+}
+
+.boton {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Verde */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.boton:hover {
+  background-color: #45a049; /* Verde más oscuro */
+}
+
+.botones-container {
+  margin-top: 20px;
+}
+
+.grupo-botones {
+  display: inline-block;
+}
+ /*BOTONES CONCEPTOS.JS*/
+ .btn {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
